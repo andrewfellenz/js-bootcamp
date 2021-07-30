@@ -1,6 +1,7 @@
 
 import { checkUser } from './init-app.js';
 import { activateFoodIcons } from './plate-management.js';
+import { User } from './User.js';
 
 const FoodPlate = (function() {
     let user = new User();
