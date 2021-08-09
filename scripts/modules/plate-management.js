@@ -73,7 +73,7 @@ function diaryUpdate(foodAdded) {
 
     //if you added fruit
     if (foodAdded === "fruitIcon") {
-        measure = "cup";
+        let measure = "cup";
         console.log('user ate fruit');
         //if you haven't eaten any fruit yet
         if (FoodPlate.user.userStatus[0].fruit.eaten === 0) {
@@ -103,7 +103,7 @@ function diaryUpdate(foodAdded) {
     }
 //if you added protein
     if (foodAdded === "proteinIcon") {
-        measure = "cup";
+        let measure = "cup";
         console.log('user ate protein');
         //if you haven't eaten any protein yet
         if (FoodPlate.user.userStatus[1].protein.eaten === 0) {
@@ -132,7 +132,7 @@ function diaryUpdate(foodAdded) {
     }
     //if you added veg
     if (foodAdded === "vegIcon") {
-        measure = "cup";
+        let measure = "cup";
         console.log('user ate veg');
         //if you haven't eaten any veg yet
         if (FoodPlate.user.userStatus[2].veg.eaten === 0) {
@@ -161,7 +161,7 @@ function diaryUpdate(foodAdded) {
     }
     //if you added grain
     if (foodAdded === "grainIcon") {
-        measure = "cup";
+        let measure = "cup";
         console.log('user ate grain');
         //if you haven't eaten any grain yet
         if (FoodPlate.user.userStatus[3].grain.eaten === 0) {
