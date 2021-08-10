@@ -1,28 +1,18 @@
-function User(name, gender, age, registered, req, userStatus) {
-    this.userName = name;
-    this.userGender = gender;
-    this.userAge = age;
-    this.userCode = this.userGender + this.userAge;
-    this.registered = false;
-    this.userReq = req;
-    this.userStatus = null;
+function User(
+	name = 'Unregistered User',
+	gender = 'Uknown',
+	age = 'Uknown',
+	registered = false,
+	req = 'Uknown',
+	userStatus = 0
+) {
+	this.userName = name;
+	this.userGender = gender;
+	this.userAge = age;
+	this.userCode = this.userGender + this.userAge;
+	this.registered = registered;
+	this.userReq = req;
+	this.userStatus = userStatus;
 }
 
-export { User }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+export { User };
